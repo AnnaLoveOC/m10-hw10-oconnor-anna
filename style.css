@@ -33,6 +33,10 @@ body {
 
   /* Added Code (Step 1) */
   grid-area: header;
+
+  /* Added Code (Refinement) */
+  align-items: center;
+  width: 100%;
 }
 
 .header__title {
@@ -140,9 +144,37 @@ body {
     "nav"
     "main"
     "footer";
+
+    /* Added Code (Refinement) */
+    row-gap: 40px;
   }
   /* End Added Code (Step 1) */
 
+  /* Added Code (Refinement) */
+  .header {
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__container {
+    width: 60vw;
+    min-width: 300px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 12px 0;
+    max-width: 614px;
+    margin: 0;
+  }
+
+  .img_card__container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+
+  /* End Added Code (Refinement) */
 
   .header__title {
     font-size: 2rem;
