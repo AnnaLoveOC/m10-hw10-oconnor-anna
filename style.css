@@ -82,6 +82,15 @@ body {
 /* Added Code (Step 1) */
 .img_card__container {
   grid-area: main;
+
+  /* End Added Code (Step 1) */
+  /* Added Code (Step 2) */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-auto-rows: 350px;
+
+
+
 }
 
 .img_card__img {
